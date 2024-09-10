@@ -35,7 +35,10 @@ nav {
   z-index: 999;
   transition: all 0.8s ease-in-out;
 }
-
+.togel{
+  max-height: 0px;
+  margin: 0;
+}
 .logo a img {
   width: 127px;
   margin-right: 103px
@@ -153,7 +156,7 @@ nav ul li a:hover{
 @media (max-width: 490px) {
   .logo a img {
     width: 114px;
-    padding-top: 31px;
+    
     margin-right: 0px;
   }
   .image1 {
@@ -188,7 +191,7 @@ nav ul li a:hover{
 @media (max-width: 415px) {
   .Discountbtn {
 
-    width: 327px;
+    width: 287px;
   }
 }
 .grt {
@@ -296,9 +299,7 @@ nav ul li a:hover{
   padding-left: 35px;
   padding-right: 35px;
 }
-.vv{
 
-}
 .industry{
 font-size: 20px;
 font-size: 33px;
@@ -403,6 +404,7 @@ padding-right: 10px;
 /* {{=====custom circle button=====}} */
 
 .box1 {
+  left: -44px;
   width: 150px;
   height: 150px;
   box-shadow: 16px 14px 20px #0000008c;

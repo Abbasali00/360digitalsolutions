@@ -10,9 +10,9 @@
     integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="style-contact.css" />
-  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="/style.css" />
+  <link rel="stylesheet" href="/style-contact.css" />
+  <link rel="stylesheet" href="/css/bootstrap.min.css" />
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 </head>
 
@@ -21,14 +21,14 @@
     <nav class="navbar-container">
       <div class="container">
         <div class="flex-container">
-          <div class="logo">
-            <a href="index.html"><img class="img-fluid image-logo" src="images/logo.png" alt="logo" /></a>
+          <div class="logo m-0">
+            <a href="index.html"><img class="img-fluid image-logo" src="/assets/images/logo.png" alt="logo" /></a>
           </div>
-          <ul id="menuList">
-            <li><a href="index.html" class="text home-text pl-2">Home</a></li>
+          <ul id="menuList" class="togel">
+            <li><a href="/index.html" class="text home-text pl-2">Home</a></li>
             <li><a href="about.html" class="text2 px-2">About us</a></li>
             <li><a href="contact.html" class="text3 px-2">Contact us</a></li>
-            <li><a href="index.html#1" class="text5 px-2">Services</a></li>
+            <li><a href="/index.html#1" class="text5 px-2">Services</a></li>
             <li><a href="privcy.html" class="text5 px-2">Privacy Policy</a></li>
           </ul>
           <div class="menu-icon">
@@ -42,46 +42,50 @@
 
   <div class="container pt-5 ">
     <div class="row fr">
-      <div class="col-md-6 "> 
-        <img class="img-fluid conti" src="images/contactim2.png" alt="">
+      <div class="col-md-6 ">
+        <img class="img-fluid conti" src="/assets/images/contactim2.png" alt="">
       </div>
       <div class="col-md-6 contacts ">
         <h3 class="fontw backc">Contact Us</h3>
+
+
+
         <form action="https://api.web3forms.com/submit" method="POST">
           <input type="hidden" name="access_key" value="07fe8110-b42e-4b60-932c-dc0b6e3a2dea">
-      <label class="pt-4 m-0" for="">Name</label>
-    <br>
-      <input  class="input1 " type="name" name="name" placeholder="Davis samith" required>
-      <br>
-      <label  class=" m-0" for="">Email</label>
-      <br>
-      <input class="input1 pt-1 " type="email" name="email" placeholder="davissmith@gmail.com" required>
-      <br>
-      <label  class=" m-0" for="">Number</label>
-      <br>
-      <input class="input1 m-0 " type="number" name="number" placeholder="+923018671190" required>
-      <br>
-      <label  class="m-0" for="">Message</label>
-      <br>
-      <input class="input1 " type="message" name="messae" placeholder="This is a message" required >
-     <div class="col-md-12 pt-5" style="height: 268px;">
-      <a class="abtn mt-5 " href="contact.html" style="--clr: #1691F4"><span class="ins"> <button class="color"  type="submit" style="background: none;
+          <label class="pt-4 m-0" for="">Name</label>
+          <br>
+          <input class="input1 " type="name" name="name" placeholder="Davis samith" required>
+          <br>
+          <label class=" m-0" for="">Email</label>
+          <br>
+          <input class="input1 pt-1 " type="email" name="email" placeholder="davissmith@gmail.com" required>
+          <br>
+          <label class=" m-0" for="">Number</label>
+          <br>
+          <input class="input1 m-0 " type="number" name="number" placeholder="+923018671190" required>
+          <br>
+          <label class="m-0" for="">Message</label>
+          <br>
+          <input class="input1 " type="message" name="message" placeholder="This is a message" required>
+          <div class="col-md-12 pt-5" style="height: 268px;">
+            <a class="abtn mt-5 " href="contact.html" style="--clr: #1691F4"><span class="ins"> <button class="color"
+                  type="submit" onSubmit={onSubmit} style="background: none;
     border: none;     color: white">Submit</button> </span><i></i></a>
-    </form>
-     </div>
+        </form>
       </div>
-    
-      
     </div>
+
+
   </div>
-  
+  </div>
+
 
   <!-- ==== {{section 3 }}==== -->
 
-   <div class="container">
+  <div class="container">
     <div class="row  pt-3">
       <div class="col-md-2 box-text">
-        <img class="img-fluid" src="images/logo.png" alt="">
+        <img class="img-fluid" src="../assets/images/logo.png" alt="">
       </div>
       <div class="col-md-8 pt-4">
         <p class="tin">360 Digital Solutions is committed to creating personalized
@@ -90,8 +94,8 @@
       </div>
     </div>
   </div>
-</div>
-   </div>
+  </div>
+  </div>
 
 
   <!-- ==== {{section 7 }}==== -->
@@ -99,13 +103,19 @@
   <div class="container pb-3">
     <div class="row">
       <div class="col-md-4">
-     <i class="fa-regular fa-comment"></i><a href="" class="lastt"><p class="contactus ">Contact Us</p></a>   
+        <i class="fa-regular fa-comment"></i><a href="" class="lastt">
+          <p class="contactus ">Contact Us</p>
+        </a>
       </div>
       <div class="col-md-4">
-        <i class="fa-solid fa-phone-volume"></i><a href="" class="lastt"><p class="contactus ">+923056703703</p></a>        
+        <i class="fa-solid fa-phone-volume"></i><a href="" class="lastt">
+          <p class="contactus ">+923056703703</p>
+        </a>
       </div>
-      <div class="col-md-4">
-        <i class="fa-regular fa-envelope"></i> <a href="" class="lastt"><p class="contactus ">Info.3sixtydigitals@gmail.com</p></a>        
+      <div class="col-md-4 d-flex">
+        <i class="fa-regular fa-envelope"></i> <a href="" class="lastt">
+          <p class="contactus ">Info.3sixtydigitals@gmail.com</p>
+        </a>
       </div>
     </div>
     <hr>
@@ -116,12 +126,14 @@
       <div class="col-md-2">
         <a href="https://www.facebook.com/360digitalss 
         "><i class="fa-brands fa-facebook licon facebook"></i></a>
-        <a href="https://www.instagram.com/360_digitalssolution/"><i class="fa-brands fa-instagram licon facebook"></i></a>
-        <a href="https://www.linkedin.com/company/3sixtydigitals/about/?viewAsMember=true"><i class="fa-brands fa-linkedin licon facebook"></i></a>
+        <a href="https://www.instagram.com/360_digitalssolution/"><i
+            class="fa-brands fa-instagram licon facebook"></i></a>
+        <a href="https://www.linkedin.com/company/3sixtydigitals/about/?viewAsMember=true"><i
+            class="fa-brands fa-linkedin licon facebook"></i></a>
       </div>
     </div>
   </div>
- 
+
 
   <!-- {{===js=====}}  -->
 
@@ -147,15 +159,3 @@
 </body>
 
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
