@@ -31,7 +31,8 @@
             <li><a href="/index.html#1" class="text5 px-2">Services</a></li>
             <li><a href="privcy.html" class="text5 px-2">Privacy Policy</a></li>
           </ul>
-          <div class="menu-icon">
+          <div class="menu-icon m-0" style="
+          padding-top: 52px ">
             <i class="fa-solid fa-bars" onclick="toggleMenu()"></i>
           </div>
         </div>
@@ -112,9 +113,9 @@
           <p class="contactus ">+923056703703</p>
         </a>
       </div>
-      <div class="col-md-4 d-flex">
-        <i class="fa-regular fa-envelope"></i> <a href="" class="lastt">
-          <p class="contactus ">Info.3sixtydigitals@gmail.com</p>
+      <div class="col-md-5 d-flex m-0">
+        <i class="fa-regular fa-envelope m-0 pt-2"></i> <a href="" class="lastt m-0">
+          <p class="contactus  m-0">Info.3sixtydigitals@gmail.com</p>
         </a>
       </div>
     </div>
@@ -137,17 +138,7 @@
 
   <!-- {{===js=====}}  -->
 
-  <script>
-    function showSidebar() {
-      const sidebar = document.querySelector(".sidebar");
-      sidebar.style.display = "flex";
-    }
-
-    function hideSidebar() {
-      const sidebar = document.querySelector(".sidebar");
-      sidebar.style.display = "none";
-    }
-  </script>
+  <script src="/script-nav.js"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
     AOS.init({
@@ -155,7 +146,7 @@
     });
   </script>
   <script src="js/bootstrap.bundle.js"></script>
-  <script src="srcipt.js"></script>
+  
 </body>
 
 </html>
